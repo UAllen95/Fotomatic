@@ -39,6 +39,7 @@ html {
 @media only screen and (max-width: 760px) {
   .main-content {
     top: 2.5625rem;
+    overflow: hidden;
   }
 }
 
@@ -110,6 +111,10 @@ header .tablet {
 }
 
 @media only screen and (max-width: 480px) {
+  header {
+    height: 3rem;
+  }
+
   header .desktop {
     display: none;
   }
@@ -229,6 +234,8 @@ header .tablet {
 @media only screen and (max-width: 480px) {
   #sign-up-section {
     height: 20rem;
+    background-size: cover;
+    background-position: right;
   }
 
   #sign-up-cta h1 {
@@ -247,6 +254,7 @@ header .tablet {
   justify-content: space-between;
   flex-wrap: nowrap;
   flex-shrink: 50;
+  width: 90%;
   padding: 4rem 5%;
   background-color: #f3f3f3;
 }
@@ -297,6 +305,30 @@ header .tablet {
   .feature h3 {
     font-size: .875rem;
     line-height: 1.4;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #features-section {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  #features-section .feature {
+    margin: 0;
+    padding: 1rem 1rem 0 1rem;
+  }
+
+  #features-section .content {
+    text-align: center;
+    height: auto;
+    padding-bottom: 1.875rem;7
+  }
+
+  #features-section .content h2 {
+    font-weight: normal;
   }
 }
 
@@ -357,6 +389,12 @@ header .tablet {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  #filters-section .image-hide {
+    display: none;
+  }
+}
+
 /* Quotes Section */
 
 #quotes-section {
@@ -381,19 +419,29 @@ header .tablet {
 }
 
 @media only screen and (max-width: 760px) {
-  #quotes-section content {
+  #quotes-section .content {
     padding: 1.875rem .625rem;
   }
 
-  #quotes-section quote {
+  #quotes-section .quote {
     font-size: 1.5rem;
     line-height: 1.4;
+    text-align: left;
+    display: inline-block;
+    width: 72%;
   }
 
-  #quotes-section quote-citation {
-    display: block;
+  #quotes-section .quote-citation {
+    display: inline-block;
     padding-top: 1rem;
     margin: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #quotes-section .quote {
+    text-align: center;
+    width: 80%;
   }
 }
 
